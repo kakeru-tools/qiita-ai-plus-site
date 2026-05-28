@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qiita-AI+ — AI 執筆補助 Chrome 拡張</title>
+  <link rel="icon" type="image/png" href="icon-128.png" />
+  <meta name="description" content="Qiita 執筆画面に AI による タイトル候補・LGTM 予測・タグ最適化を提供する Chrome 拡張機能" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Meiryo", "Yu Gothic", sans-serif; color: #1a1a1a; background: #fafafa; line-height: 1.8; margin: 0; padding: 0; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 48px 24px 80px; }
+    header { padding-bottom: 32px; border-bottom: 1px solid #e5e5e5; margin-bottom: 32px; text-align: center; }
+    header h1 { margin: 16px 0 8px; font-size: 36px; color: #55c500; }
+    header .tag { color: #888; font-size: 14px; }
+    h2 { font-size: 22px; margin-top: 40px; color: #1a1a1a; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 24px 0; }
+    .feature { background: white; padding: 20px; border-radius: 8px; border: 1px solid #e5e5e5; }
+    .feature h3 { margin: 0 0 8px; font-size: 16px; color: #2a7f3f; }
+    .feature p { margin: 0; font-size: 14px; color: #555; }
+    .cta { background: #55c500; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; display: inline-block; font-weight: bold; margin: 24px 8px; }
+    .cta:hover { background: #4ab000; }
+    footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #888; text-align: center; }
+    footer a { margin: 0 8px; color: #2d8c5d; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Qiita-AI+</h1>
+    <p class="tag">Qiita 執筆を AI が補助する Chrome 拡張</p>
+    <a class="cta" href="https://chrome.google.com/webstore/search/qiita-ai-plus">Chrome ウェブストアで入手</a>
+  </header>
+
+  <h2>主な機能</h2>
+  <div class="features">
+    <div class="feature"><h3>📝 タイトル候補生成</h3><p>記事内容から SEO に強いタイトル候補を AI が複数提案。</p></div>
+    <div class="feature"><h3>📊 LGTM 予測</h3><p>過去の高 LGTM 記事と類似度を比較してスコア表示。</p></div>
+    <div class="feature"><h3>🏷 タグ最適化</h3><p>発見されやすいタグを Qiita の統計から提案。</p></div>
+    <div class="feature"><h3>📈 いいね傾向分析</h3><p>自記事のいいね時刻分布を可視化。</p></div>
+    <div class="feature"><h3>🤖 マルチ AI 対応</h3><p>Claude / GPT / Gemini から選択可能。API キーはユーザー保管。</p></div>
+    <div class="feature"><h3>🔒 プライバシー</h3><p>記事内容はユーザーが選んだ AI プロバイダーにのみ送信。Qiita-AI+ サーバーには送られない。</p></div>
+  </div>
+
+  <h2>料金</h2>
+  <p><strong>Free</strong>: 基本生成 (月 30 回まで) は無料で使えます。<br/>
+  <strong>Pro (¥980/月)</strong>: 無制限生成 + プロンプトテンプレライブラリ + 履歴管理 + マルチ AI 並列 + 製品特有機能。準備中。</p>
+
+  <h2>使い方</h2>
+  <ol>
+    <li>Chrome ウェブストアからインストール</li>
+    <li>Qiita の新規記事ページを開く</li>
+    <li>ツールバーに表示される 🤖 アイコンをクリック</li>
+    <li>AI プロバイダー (Claude / GPT / Gemini) と API キーを設定</li>
+    <li>記事の下書き → AI 補助 → 公開</li>
+  </ol>
+
+  <h2>サポート</h2>
+  <p>不具合報告 / 機能要望: <a href="https://github.com/kakeru-tools/qiita-ai-plus/issues">GitHub Issues</a></p>
+
+  <footer>
+    <a href="privacy.html">プライバシーポリシー</a> ·
+    <a href="https://github.com/kakeru-tools/qiita-ai-plus">GitHub</a> ·
+    © 2026 Kakeru
+  </footer>
+</div>
+</body>
+</html>
