@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qiita記事の書き方テンプレート｜LGTM構成｜Qiita-AI+</title>
+<meta name="description" content="Qiitaで読まれLGTMされる記事の書き方テンプレートを、構成・例文・タグ設計まで具体的に解説。再現性のある章立てがそのまま使えます。">
+<link rel="canonical" href="https://kakeru-tools.github.io/qiita-ai-plus-site/blog/qiita-kakikata-template/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article"><meta property="og:title" content="Qiita記事の書き方テンプレート｜LGTM構成">
+<meta property="og:description" content="Qiitaで読まれLGTMされる記事の書き方テンプレートを、構成・例文・タグ設計まで具体的に解説。再現性のある章立てがそのまま使えます。"><meta property="og:url" content="https://kakeru-tools.github.io/qiita-ai-plus-site/blog/qiita-kakikata-template/">
+<meta property="og:image" content="https://kakeru-tools.github.io/qiita-ai-plus-site/icon-128.png">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Qiita記事の書き方テンプレート｜LGTM構成">
+<meta name="twitter:description" content="Qiitaで読まれLGTMされる記事の書き方テンプレートを、構成・例文・タグ設計まで具体的に解説。再現性のある章立てがそのまま使えます。"><meta name="twitter:image" content="https://kakeru-tools.github.io/qiita-ai-plus-site/icon-128.png">
+<style>:root{--p:#2d8c5d}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","Hiragino Sans","Meiryo","Yu Gothic",sans-serif;color:#1a1a1a;background:#fafafa;line-height:1.85}
+a{color:var(--p)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header.site{background:var(--p);color:#fff;padding:14px 0}
+header.site .wrap{display:flex;align-items:center;gap:10px}
+header.site a{color:#fff;text-decoration:none;font-weight:800;font-size:18px}
+.crumb{font-size:13px;color:#666;padding:16px 0 0}
+.crumb a{color:#666}
+article h1{font-size:30px;line-height:1.4;margin:10px 0 6px;font-weight:800;letter-spacing:-.01em}
+.meta{color:#888;font-size:13px;margin-bottom:18px}
+article h2{font-size:23px;margin:34px 0 12px;padding-top:8px;border-top:1px solid #eee;font-weight:800}
+article h3{font-size:18px;margin:22px 0 8px;font-weight:700}
+article p{margin:12px 0}
+article ul,article ol{margin:12px 0;padding-left:24px}
+article li{margin:6px 0}
+article code{background:#f0f2f4;padding:2px 6px;border-radius:4px;font-size:.92em;font-family:Consolas,Menlo,monospace}
+article pre{background:#1b1f24;color:#e6e9ee;padding:16px;border-radius:10px;overflow:auto;font-size:14px}
+article pre code{background:none;color:inherit;padding:0}
+article blockquote{margin:16px 0;padding:8px 16px;border-left:4px solid var(--p);background:#f4f7f5;color:#444}
+article table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
+article th,article td{border:1px solid #e2e2e2;padding:8px 10px;text-align:left}
+article th{background:#f4f6f8}
+.cta-card{margin:40px 0 8px;border:2px solid var(--p);border-radius:14px;padding:22px;background:#fff}
+.cta-card h3{margin:0 0 8px;font-size:19px;color:var(--p)}
+.cta-card p{margin:8px 0;font-size:15px;color:#333}
+.cta-btn{display:inline-block;margin-top:12px;background:var(--p);color:#fff;text-decoration:none;font-weight:700;padding:12px 26px;border-radius:999px}
+.cta-note{font-size:12px;color:#999;margin-top:10px}
+.related{margin:36px 0;padding:18px;background:#fff;border:1px solid #eee;border-radius:12px}
+.related h3{margin:0 0 10px;font-size:16px}
+.related a{display:block;padding:5px 0}
+footer{margin:48px 0 32px;padding-top:18px;border-top:1px solid #eee;color:#999;font-size:13px;text-align:center}
+.bloglist a.card{display:block;background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:18px;margin:14px 0;text-decoration:none;color:inherit}
+.bloglist a.card:hover{border-color:var(--p)}
+.bloglist .t{font-size:18px;font-weight:700;color:var(--p)}
+.bloglist .d{font-size:14px;color:#666;margin-top:6px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Qiita記事の書き方テンプレート｜LGTM構成", "description": "Qiitaで読まれLGTMされる記事の書き方テンプレートを、構成・例文・タグ設計まで具体的に解説。再現性のある章立てがそのまま使えます。", "inLanguage": "ja", "datePublished": "2026-06-15", "dateModified": "2026-06-15", "author": {"@type": "Organization", "name": "Kakeru"}, "publisher": {"@type": "Organization", "name": "Kakeru"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://kakeru-tools.github.io/qiita-ai-plus-site/blog/qiita-kakikata-template/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Qiita-AI+", "item": "https://kakeru-tools.github.io/qiita-ai-plus-site/"}, {"@type": "ListItem", "position": 2, "name": "記事", "item": "https://kakeru-tools.github.io/qiita-ai-plus-site/blog/"}, {"@type": "ListItem", "position": 3, "name": "Qiita記事の書き方テンプレート｜LGTM構成", "item": "https://kakeru-tools.github.io/qiita-ai-plus-site/blog/qiita-kakikata-template/"}]}</script>
+</head><body>
+<header class="site"><div class="wrap"><a href="../../">Qiita-AI+</a></div></header>
+<div class="wrap">
+<div class="crumb"><a href="../../">Qiita-AI+</a> ／ <a href="../">記事</a> ／ Qiita記事の書き方テンプレート｜LGTM構成</div>
+<article>
+<h1>Qiita記事の書き方テンプレート｜LGTM構成</h1>
+<div class="meta">2026-06-15 ・ Qiita-AI+ の中の人</div>
+<h2>なぜ「テンプレート」で書くと読まれやすいのか</h2>
+<p>Qiitaで読まれない記事の多くは、内容が悪いのではなく「何を解決した記事なのか」が冒頭で伝わらないことが原因です。読者の多くはエラー名や技術名で検索して流入し、最初の数行で「自分の問題が解決しそうか」を判断します。決まった構成（テンプレート）に沿って書くと、この判断を助けられます。</p>
+<p>テンプレートのもう一つの効能は、書く側の負担が減ることです。毎回ゼロから構成を考えず、空欄を埋める感覚で書けるため、投稿のハードルが下がり継続しやすくなります。</p>
+
+<h2>そのまま使える基本テンプレート</h2>
+<p>筆者が普段使っている章立ては、次の6ブロックです。技術記事（特に「やってみた」「ハマった」系）に幅広く使えます。</p>
+<pre><code># タイトル（具体的に。技術名＋やったこと＋結果）
+
+## 背景・課題
+なぜこれをやったか。誰のどんな困りごとか。
+
+## 環境
+OS / 言語・フレームワークのバージョン / 主要ライブラリ
+
+## 手順
+1. ...
+2. ...
+（コードは動く最小単位で）
+
+## 詰まった点と解決
+エラー全文 → 原因 → 対処
+
+## まとめ
+得られた結論。次にやること。
+
+## 参考
+公式ドキュメント・引用元のリンク</code></pre>
+
+<h3>各ブロックのポイント</h3>
+<ul>
+<li><strong>背景・課題</strong>：「業務でCSVを毎日手作業で集計しており、自動化したかった」のように、読者が自分ごと化できる一文を置く。</li>
+<li><strong>環境</strong>：再現性の要。バージョン違いで動かないのはよくある躓きなので、必ず明記する。</li>
+<li><strong>手順</strong>：コピペで動く最小コードを心がける。省略する場合は「ここは省略」と明示。</li>
+<li><strong>詰まった点</strong>：実はここが一番感謝されやすい。同じエラーで検索した人が直接たどり着く。</li>
+</ul>
+
+<h2>冒頭文の例（出だしで離脱させない）</h2>
+<p>タイトル直後の数行は特に重要です。次のような型が使いやすいです。</p>
+<blockquote>
+<p>「○○を導入したところ△△というエラーで動かず、解決まで小一時間かかりました。同じ状況の方向けに、原因と対処を最小手順でまとめます。環境は□□です。」</p>
+</blockquote>
+<p>「何をして」「どうなって」「この記事を読むと何が分かるか」を1〜3文で示すのがコツです。期待値を先に揃えると、最後まで読まれやすくなります。</p>
+
+<h2>タグは検索流入の入口</h2>
+<p>Qiitaのタグは、記事の発見されやすさに直結します。次の点を意識すると無駄が減ります。</p>
+<ul>
+<li>言語・フレームワーク・主要ライブラリ名を正確に（表記ゆれに注意。例：<code>Node.js</code>）。</li>
+<li>大きすぎるタグだけでなく、具体的なタグも混ぜる（例：<code>Python</code> に加え <code>pandas</code>）。</li>
+<li>記事内容と無関係なタグは付けない。流入しても離脱が増えるだけです。</li>
+</ul>
+<p>5個程度を上限の目安に、関連度の高い順で選ぶと過不足が出にくくなります。</p>
+
+<h2>公開前のセルフチェック</h2>
+<ul>
+<li>タイトルだけで何の記事か分かるか。</li>
+<li>環境（バージョン）を書いたか。</li>
+<li>コードはコピペで動くか、動かないなら断り書きがあるか。</li>
+<li>エラーは全文を載せたか（検索に引っかかる）。</li>
+<li>参考リンク（公式優先）を付けたか。</li>
+</ul>
+<p>このチェックを通すだけで、後から「情報が足りない」と指摘される率が下がります。</p>
+<p>ちなみに筆者は、この構成チェックやタイトル案出しの手間を減らすために、Qiitaの執筆画面に補助サイドバーを足す非公式・個人開発のChrome拡張「Qiita-AI+」を自作して使っています。タイトル候補やLGTM予測、章立て、タグ最適化、読みやすさ評価といった機能を無料で毎日使え（回数上限あり）、無制限にしたい場合はPro（¥980/月）があります。設計はBYOK方式で、自分のClaude/OpenAIのAPIキーを使い、本文やキーは運営サーバーに送らずローカル保存される作りです。あくまで下書きの補助で、内容を作るのは自分です。</p>
+
+<h2>まとめ</h2>
+<p>「背景→環境→手順→詰まった点→まとめ→参考」の型と、正確なタグ付けを習慣にするだけで、記事の再現性と発見されやすさは着実に上がります。まずは一本、このテンプレートに沿って書いてみてください。</p>
+</article>
+<div class="cta-card">
+<h3>この記事を書いた人が作ったツール：Qiita-AI+</h3>
+<p>Qiitaの執筆画面に、AI執筆補助のサイドバーを足すChrome拡張です（Qiita公式ではない、個人開発のサードパーティ製です）。タイトル・冒頭・構成・読みやすさなどを、編集画面のまま確認できます。</p>
+<p>無料で毎日使えます（回数上限あり）。Proは月額¥980。自分のClaude／OpenAIのAPIキーで動く<strong>BYOK設計</strong>で、本文もAPIキーも運営サーバーには送らず、ブラウザ内だけで処理します。</p>
+<a class="cta-btn" href="https://chromewebstore.google.com/detail/ahemolcehmidofoblllkpheneeaejnfj" target="_blank" rel="noopener">Chrome に追加（無料）</a>
+<div class="cta-note">※ AIの利用料はご自身のAPI契約に直接発生します（Claude Haikuなら1記事あたり数円〜数十円程度）。</div>
+</div>
+<div class="related"><h3>関連記事</h3><a href="../qiita-title-tsukekata/">Qiitaのタイトルの付け方｜検索で見つかる見出し設計</a><a href="../qiita-hatsutoukou-neta/">Qiita初投稿のネタ選びと記事構成の作り方</a></div>
+<footer>© Kakeru ・ <a href="../../">Qiita-AI+ について</a> ・ <a href="../">記事一覧</a></footer>
+</div></body></html>
