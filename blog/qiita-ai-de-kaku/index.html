@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QiitaをAIで書く｜LGTMされる作法｜Qiita-AI+</title>
+<meta name="description" content="QiitaでAIを使う良い例と悪い例を具体的に解説。構成・タイトル・タグの作り方、未検証コードの危険、コミュニティで嫌われない誠実な使い方を紹介します。">
+<link rel="canonical" href="https://kakeru-tools.github.io/qiita-ai-plus-site/blog/qiita-ai-de-kaku/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article"><meta property="og:title" content="QiitaをAIで書く｜LGTMされる作法">
+<meta property="og:description" content="QiitaでAIを使う良い例と悪い例を具体的に解説。構成・タイトル・タグの作り方、未検証コードの危険、コミュニティで嫌われない誠実な使い方を紹介します。"><meta property="og:url" content="https://kakeru-tools.github.io/qiita-ai-plus-site/blog/qiita-ai-de-kaku/">
+<meta property="og:image" content="https://kakeru-tools.github.io/qiita-ai-plus-site/icon-128.png">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="QiitaをAIで書く｜LGTMされる作法">
+<meta name="twitter:description" content="QiitaでAIを使う良い例と悪い例を具体的に解説。構成・タイトル・タグの作り方、未検証コードの危険、コミュニティで嫌われない誠実な使い方を紹介します。"><meta name="twitter:image" content="https://kakeru-tools.github.io/qiita-ai-plus-site/icon-128.png">
+<style>:root{--p:#2d8c5d}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","Hiragino Sans","Meiryo","Yu Gothic",sans-serif;color:#1a1a1a;background:#fafafa;line-height:1.85}
+a{color:var(--p)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header.site{background:var(--p);color:#fff;padding:14px 0}
+header.site .wrap{display:flex;align-items:center;gap:10px}
+header.site a{color:#fff;text-decoration:none;font-weight:800;font-size:18px}
+.crumb{font-size:13px;color:#666;padding:16px 0 0}
+.crumb a{color:#666}
+article h1{font-size:30px;line-height:1.4;margin:10px 0 6px;font-weight:800;letter-spacing:-.01em}
+.meta{color:#888;font-size:13px;margin-bottom:18px}
+article h2{font-size:23px;margin:34px 0 12px;padding-top:8px;border-top:1px solid #eee;font-weight:800}
+article h3{font-size:18px;margin:22px 0 8px;font-weight:700}
+article p{margin:12px 0}
+article ul,article ol{margin:12px 0;padding-left:24px}
+article li{margin:6px 0}
+article code{background:#f0f2f4;padding:2px 6px;border-radius:4px;font-size:.92em;font-family:Consolas,Menlo,monospace}
+article pre{background:#1b1f24;color:#e6e9ee;padding:16px;border-radius:10px;overflow:auto;font-size:14px}
+article pre code{background:none;color:inherit;padding:0}
+article blockquote{margin:16px 0;padding:8px 16px;border-left:4px solid var(--p);background:#f4f7f5;color:#444}
+article table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
+article th,article td{border:1px solid #e2e2e2;padding:8px 10px;text-align:left}
+article th{background:#f4f6f8}
+.cta-card{margin:40px 0 8px;border:2px solid var(--p);border-radius:14px;padding:22px;background:#fff}
+.cta-card h3{margin:0 0 8px;font-size:19px;color:var(--p)}
+.cta-card p{margin:8px 0;font-size:15px;color:#333}
+.cta-btn{display:inline-block;margin-top:12px;background:var(--p);color:#fff;text-decoration:none;font-weight:700;padding:12px 26px;border-radius:999px}
+.cta-note{font-size:12px;color:#999;margin-top:10px}
+.related{margin:36px 0;padding:18px;background:#fff;border:1px solid #eee;border-radius:12px}
+.related h3{margin:0 0 10px;font-size:16px}
+.related a{display:block;padding:5px 0}
+footer{margin:48px 0 32px;padding-top:18px;border-top:1px solid #eee;color:#999;font-size:13px;text-align:center}
+.bloglist a.card{display:block;background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:18px;margin:14px 0;text-decoration:none;color:inherit}
+.bloglist a.card:hover{border-color:var(--p)}
+.bloglist .t{font-size:18px;font-weight:700;color:var(--p)}
+.bloglist .d{font-size:14px;color:#666;margin-top:6px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "QiitaをAIで書く｜LGTMされる作法", "description": "QiitaでAIを使う良い例と悪い例を具体的に解説。構成・タイトル・タグの作り方、未検証コードの危険、コミュニティで嫌われない誠実な使い方を紹介します。", "inLanguage": "ja", "datePublished": "2026-06-15", "dateModified": "2026-06-15", "author": {"@type": "Organization", "name": "Kakeru"}, "publisher": {"@type": "Organization", "name": "Kakeru"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://kakeru-tools.github.io/qiita-ai-plus-site/blog/qiita-ai-de-kaku/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Qiita-AI+", "item": "https://kakeru-tools.github.io/qiita-ai-plus-site/"}, {"@type": "ListItem", "position": 2, "name": "記事", "item": "https://kakeru-tools.github.io/qiita-ai-plus-site/blog/"}, {"@type": "ListItem", "position": 3, "name": "QiitaをAIで書く｜LGTMされる作法", "item": "https://kakeru-tools.github.io/qiita-ai-plus-site/blog/qiita-ai-de-kaku/"}]}</script>
+</head><body>
+<header class="site"><div class="wrap"><a href="../../">Qiita-AI+</a></div></header>
+<div class="wrap">
+<div class="crumb"><a href="../../">Qiita-AI+</a> ／ <a href="../">記事</a> ／ QiitaをAIで書く｜LGTMされる作法</div>
+<article>
+<h1>QiitaをAIで書く｜LGTMされる作法</h1>
+<div class="meta">2026-06-15 ・ Qiita-AI+ の中の人</div>
+<h2>AIで書いた記事が嫌われる理由を先に押さえる</h2>
+<p>「Qiita AI 書き方」で調べる人の多くは、AIで楽をしたいわけではなく「AIを使っても恥ずかしくない記事を出したい」と思っています。Qiitaは開発者の実用情報が集まる場で、読者は<strong>検証されていない情報</strong>と<strong>中身の薄い量産記事</strong>に敏感です。AI自体は禁止されていませんが、嫌われるのは「AIが書いた」ことではなく「人間が検証していない」ことです。ここを外さなければ、AIは強力な下書き相棒になります。</p>
+
+<h2>良い使い方：AIは「壁打ち」と「下書き」に使う</h2>
+<p>AIが得意なのは、あなたが頭の中に持っている経験を整理し、抜けを埋めることです。ゼロから事実を作らせるのではなく、自分の実体験を素材として渡すのがコツです。</p>
+
+<h3>構成（章立て）を先に決める</h3>
+<p>本文より先に骨格を作ると、内容がぶれません。Qiitaで読まれやすい技術記事の型はおおむね次の流れです。</p>
+<ul>
+<li>はじめに（誰向け・何が分かるか）</li>
+<li>環境・前提（バージョンを明記）</li>
+<li>つまずいた課題</li>
+<li>実装・解決</li>
+<li>動作確認</li>
+<li>ハマりどころ</li>
+<li>まとめ・参考リンク</li>
+</ul>
+<p>AIへの依頼例：「Reactの状態管理でuseEffectの無限ループにハマった体験談を書きたい。上の章立てに沿って見出し案を出して」。<strong>見出しだけ先にもらい、各節の中身は自分の言葉で書く</strong>と、コピペ感が消えます。</p>
+
+<h3>タイトルとタグを整える</h3>
+<p>Qiitaでストックされやすいタイトルは、内容が一目で分かるものです。「〜入門」「〜でハマった話と解決法」「〜の使い方まとめ」のように、対象と得られるものを具体的にします。</p>
+<ul>
+<li>悪い例：<code>Reactの話</code></li>
+<li>良い例：<code>useEffectの無限ループにハマった原因と、依存配列の正しい書き方</code></li>
+</ul>
+<p>タグは記事内容と一致するものだけを5個以内に絞ります。関係ないタグを盛るのは逆効果です。</p>
+
+<h3>読みやすさを後から整える</h3>
+<p>書き終えた本文をAIに渡し、「冗長な言い回しを削って、コードブロックと箇条書きを使った方が良い箇所を指摘して」と頼むと、推敲が速くなります。ここでも判断するのは自分です。</p>
+
+<h2>悪い使い方：そのまま貼ると確実に信頼を失う</h2>
+<p>避けたいのは次のパターンです。どれもQiitaで反応が冷たくなる典型です。</p>
+<ul>
+<li><strong>未検証のコードをそのまま掲載</strong>：AIは動かないコードや古いAPIを自信満々に出します。必ず手元で実行し、バージョンを書く。</li>
+<li><strong>事実の捏造</strong>：存在しない関数名やオプションをAIが作ることがあります。一次情報（公式ドキュメント）で裏取りする。</li>
+<li><strong>同じテーマの薄い記事を量産</strong>：SEO目的の水増しはコミュニティに見抜かれます。</li>
+<li><strong>翻訳調・定型句の放置</strong>：「本記事では〜について解説します」を全節で繰り返すと、読み飛ばされます。</li>
+</ul>
+<p>最低限のセルフチェックとして、公開前にこの3点を確認してください。</p>
+<pre><code>1. 載せたコードを実際に動かしたか
+2. バージョン・環境を明記したか
+3. AIが書いた段落を自分の言葉で確認・修正したか</code></pre>
+
+<h2>執筆を補助するツールという選択肢</h2>
+<p>章立てやタイトル案、タグの整理を毎回プロンプトに打ち込むのが面倒なら、執筆画面に補助機能を足す方法もあります。筆者が個人で開発した非公式のChrome拡張<strong>「Qiita-AI+」</strong>は、qiita.comの編集画面にサイドバーを追加し、タイトル候補とLGTM予測・冒頭文3案・章立て・タグ最適化・読みやすさ評価を無料枠（毎日・回数上限あり）で使えます。設計はBYOK（自分のClaude/OpenAIのAPIキーを使う方式）で、本文やキーは運営サーバーに送らずローカル保存し、AI利用料は自分のAPI契約に直課金されます。無制限利用などのProは月¥980（ExtensionPay／Stripe決済）です。あくまで下書きと推敲を速くする道具で、<strong>コードの検証と最終判断は人間が行う</strong>前提は変わりません。</p>
+
+<h2>まとめ：AIは加速装置、責任は書き手</h2>
+<p>AIを使うこと自体は問題になりません。問題になるのは検証しないことです。構成と推敲はAIに任せ、事実とコードは自分で確かめる。この一線さえ守れば、AIはQiitaで読まれる記事づくりの良い味方になります。</p>
+</article>
+<div class="cta-card">
+<h3>この記事を書いた人が作ったツール：Qiita-AI+</h3>
+<p>Qiitaの執筆画面に、AI執筆補助のサイドバーを足すChrome拡張です（Qiita公式ではない、個人開発のサードパーティ製です）。タイトル・冒頭・構成・読みやすさなどを、編集画面のまま確認できます。</p>
+<p>無料で毎日使えます（回数上限あり）。Proは月額¥980。自分のClaude／OpenAIのAPIキーで動く<strong>BYOK設計</strong>で、本文もAPIキーも運営サーバーには送らず、ブラウザ内だけで処理します。</p>
+<a class="cta-btn" href="https://chromewebstore.google.com/detail/ahemolcehmidofoblllkpheneeaejnfj" target="_blank" rel="noopener">Chrome に追加（無料）</a>
+<div class="cta-note">※ AIの利用料はご自身のAPI契約に直接発生します（Claude Haikuなら1記事あたり数円〜数十円程度）。</div>
+</div>
+<div class="related"><h3>関連記事</h3><a href="../qiita-kakikata-template/">Qiita記事の書き方テンプレート｜LGTM構成</a><a href="../qiita-title-tsukekata/">Qiitaのタイトルの付け方｜検索で見つかる見出し設計</a><a href="../qiita-hatsutoukou-neta/">Qiita初投稿のネタ選びと記事構成の作り方</a></div>
+<footer>© Kakeru ・ <a href="../../">Qiita-AI+ について</a> ・ <a href="../">記事一覧</a></footer>
+</div></body></html>
